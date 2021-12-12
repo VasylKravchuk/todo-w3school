@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,25 @@
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
-<body>
 
-  <div id="myDiv" class="header">
-    <h2>My To Do List</h2>
-    <input id="myInput" type="text" placeholder="Title...">
-    <span class="addBtn" onclick="newElement()">Add</span>
+<body>
+  <div class="container">
+    <div id="myDiv" class="header">
+      <h2>My To Do List</h2>
+      <div class="header__row">
+        <input id="myInput" type="text" placeholder="Title...">
+        <span class="addBtn" onclick="newElement()">Add</span>
+      </div>
+    </div>
+    <ul id="myUl">
+      <li>Hit the gym</li>
+      <li class="checked">Pay bills</li>
+      <li>Read book</li>
+      <li>To do something</li>
+    </ul>
   </div>
-  <ul id="myUl">
-    <li>Hit the gym</li>
-    <li class="checked">Pay bills</li>
-    <li>Read book</li>
-  </ul>
-  
 
   <script src="app.js"></script>
 </body>
+
 </html>
